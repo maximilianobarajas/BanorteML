@@ -1,0 +1,5 @@
+segment,clientes,churn_real,tasa
+Bajo (<25%),649,37,0.057
+Medio (25-50%),307,78,0.254
+Alto (50-75%),309,148,0.479
+Crítico (>75%),144,111,0.771

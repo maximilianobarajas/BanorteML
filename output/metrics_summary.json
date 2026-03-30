@@ -1,0 +1,147 @@
+{
+  "Logistic Regression": {
+    "cv_auc_roc_mean": 0.8449,
+    "cv_auc_roc_std": 0.0119,
+    "cv_auc_pr_mean": 0.6554,
+    "cv_f1_mean": 0.6269,
+    "auc_roc": 0.8405,
+    "auc_pr": 0.627,
+    "brier": 0.1688,
+    "f1_churn": 0.6144,
+    "precision_churn": 0.5043,
+    "recall_churn": 0.7861,
+    "threshold": 0.5,
+    "tp": 294,
+    "fp": 289,
+    "tn": 746,
+    "fn": 80
+  },
+  "Random Forest": {
+    "cv_auc_roc_mean": 0.8475,
+    "cv_auc_roc_std": 0.0104,
+    "cv_auc_pr_mean": 0.6632,
+    "cv_f1_mean": 0.631,
+    "auc_roc": 0.8446,
+    "auc_pr": 0.6554,
+    "brier": 0.1586,
+    "f1_churn": 0.6355,
+    "precision_churn": 0.5358,
+    "recall_churn": 0.7807,
+    "threshold": 0.5,
+    "tp": 292,
+    "fp": 253,
+    "tn": 782,
+    "fn": 82
+  },
+  "Gradient Boosting": {
+    "cv_auc_roc_mean": 0.8468,
+    "cv_auc_roc_std": 0.0093,
+    "cv_auc_pr_mean": 0.6607,
+    "cv_f1_mean": 0.5848,
+    "auc_roc": 0.8447,
+    "auc_pr": 0.6579,
+    "brier": 0.1361,
+    "f1_churn": 0.5865,
+    "precision_churn": 0.6701,
+    "recall_churn": 0.5214,
+    "threshold": 0.5,
+    "tp": 195,
+    "fp": 96,
+    "tn": 939,
+    "fn": 179
+  },
+  "Voting Ensemble": {
+    "cv_auc_roc_mean": 0.8501,
+    "cv_auc_roc_std": 0.0107,
+    "cv_auc_pr_mean": 0.6687,
+    "cv_f1_mean": 0.6353,
+    "auc_roc": 0.8471,
+    "auc_pr": 0.657,
+    "brier": 0.144,
+    "f1_churn": 0.6264,
+    "precision_churn": 0.5717,
+    "recall_churn": 0.6925,
+    "threshold": 0.5,
+    "tp": 259,
+    "fp": 194,
+    "tn": 841,
+    "fn": 115
+  },
+  "_meta": {
+    "best_model": "Voting Ensemble",
+    "opt_threshold": 0.42,
+    "best_f1_thresh": {
+      "threshold": 0.42,
+      "precision": 0.5385,
+      "recall": 0.7861,
+      "f1": 0.6391,
+      "f2": 0.7199,
+      "business_cost": 52600.0,
+      "tp": 294,
+      "fp": 252,
+      "tn": 783,
+      "fn": 80
+    },
+    "best_f2_thresh": {
+      "threshold": 0.225,
+      "precision": 0.4348,
+      "recall": 0.9278,
+      "f1": 0.5922,
+      "f2": 0.7563,
+      "business_cost": 36050.0,
+      "tp": 347,
+      "fp": 451,
+      "tn": 584,
+      "fn": 27
+    },
+    "best_cost_thresh": {
+      "threshold": 0.165,
+      "precision": 0.3917,
+      "recall": 0.9626,
+      "f1": 0.5568,
+      "f2": 0.7453,
+      "business_cost": 34950.0,
+      "tp": 360,
+      "fp": 559,
+      "tn": 476,
+      "fn": 14
+    },
+    "mcnemar": {
+      "Logistic Regression vs Random Forest": {
+        "p_value": 0.001,
+        "statistic": 10.89,
+        "significant": "True"
+      },
+      "Logistic Regression vs Gradient Boosting": {
+        "p_value": 0.0,
+        "statistic": 29.2196,
+        "significant": "True"
+      },
+      "Logistic Regression vs Voting Ensemble": {
+        "p_value": 0.0,
+        "statistic": 25.5956,
+        "significant": "True"
+      },
+      "Random Forest vs Gradient Boosting": {
+        "p_value": 0.0002,
+        "statistic": 13.7047,
+        "significant": "True"
+      },
+      "Random Forest vs Voting Ensemble": {
+        "p_value": 0.0091,
+        "statistic": 6.7935,
+        "significant": "True"
+      },
+      "Gradient Boosting vs Voting Ensemble": {
+        "p_value": 0.0095,
+        "statistic": 6.7222,
+        "significant": "True"
+      }
+    },
+    "fn_cost": 500.0,
+    "fp_cost": 50.0,
+    "random_state": 42,
+    "test_size": 0.2,
+    "cv_folds": 5
+  }
+}
